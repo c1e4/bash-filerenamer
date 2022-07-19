@@ -27,7 +27,15 @@ rename_files() {
 	done
 }
 
-read -p 'Enter the directory path: ' targetDir
+#check if arguments are empty
+if [ $# -eq 0 ];  then
+	echo "No arguments provided."
+	read -p 'Enter the directory path: ' targetDir;
+
+else
+	targetDir=$1
+fi
+
 #targetDir="./heh"
 
 #check if target directory exists
@@ -36,7 +44,7 @@ if [[ ! -d "${targetDir}" ]]; then
 	exit 1;
 fi
 
-echo "Specified irectory is: ${targetDir}" 
+echo "Specified directory is: ${targetDir}" 
 #get user confirmation before proceeding
 read -p 'Proceed? Y/N: ' choice
 #lowercase user input
