@@ -19,7 +19,7 @@ And you want them to be something like this:
 3.jpg
 4.jpg
 5.jpg
-...bash
+...
 ```
 
 And you need to give them names so you can be sure that they are included as source for image elements on web page. Order should not be a concern, they just need to have simple enough names. 
@@ -27,7 +27,7 @@ And you need to give them names so you can be sure that they are included as sou
 So I had such task and instead of renaming manually I created this script. 
 > Why? You may ask.
 
-> ~Just for lulz~. To do it the _programmer way_ and maintain my bash skills.
+> ~Just for lulz~. To do it the _programmer way_ and maintain bash skills.
 
 How it works:
 1) You provide a path to target directory (either as an argument to the script or manually after being prompted)
